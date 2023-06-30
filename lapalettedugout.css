@@ -1,0 +1,627 @@
+/* Header */
+/* Introduction photo*/
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes apparition2 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes apparition3 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes apparition4 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes apparition5 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes apparition6 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes apparition7 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes apparition8 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform: translateY(0);
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --color-primary: #9356DC;
+  --color-secondaru: #FF79DA;
+  --color-tertiary: #99E2D0;
+}
+
+body {
+  background: #FFFFFF;
+  height: 1460px;
+}
+
+.titre {
+  width: 100%;
+  height: 63px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.titre img {
+  position: absolute;
+  left: 90px;
+  top: 19px;
+}
+
+.retour {
+  position: absolute;
+  top: 25px;
+  left: 23px;
+}
+
+.fa-solid {
+  color: #353535;
+  font-size: 1.5em;
+}
+
+header {
+  background-image: url(Images-et-textes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 400;
+  height: 275px;
+  width: 375px;
+}
+
+.Menu {
+  padding-left: 13px;
+  background-color: #F7F7F7;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  height: 1173px;
+  width: 100%;
+  margin-top: -56px;
+}
+.Menu h2 {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  color: #101010;
+  padding-top: 32px;
+  padding-bottom: 42px;
+}
+.Menu .container h5 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--color-tertiary);
+  width: 40px;
+}
+
+.fa-regular {
+  font-size: 1.5em;
+}
+
+.coeur {
+  position: relative;
+  left: 293px;
+  top: -76px;
+}
+.coeur > i {
+  position: absolute;
+}
+
+.coeur_plein {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 2s;
+}
+.coeur_plein:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.cards-txt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 69px;
+  padding-left: 15px;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.cards-txt .card-title {
+  font-family: "roboto";
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  padding-top: 12px;
+}
+.cards-txt .card-subtile {
+  font-family: "roboto";
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 14px;
+}
+
+.container {
+  margin-bottom: 40px;
+  padding-right: 13px;
+}
+.container .cards-txt .card-subtile span {
+  color: #353535;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.entree1 {
+  -webkit-animation-name: apparition;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -moz-animation-name: apparition;
+  -moz-animation-timing-function: ease;
+  animation-name: apparition;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+.entree2 {
+  -webkit-animation-name: apparition2;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-name: apparition;
+  -moz-animation-duration: 1s;
+  -moz-animation-timing-function: ease;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+.entree3 {
+  -webkit-animation-name: apparition3;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-name: apparition;
+  -moz-animation-duration: 1s;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+.plat1 {
+  -webkit-animation-name: apparition4;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: apparition;
+  -moz-animation-timing-function: ease;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  animation-timing-function: ease;
+}
+
+.plat2 {
+  -webkit-animation-name: apparition5;
+  -webkit-animation-timing-function: ease;
+  -o-animation-duration: 1s;
+  -moz-animation-name: apparition;
+  -moz-animation-duration: 1s;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  animation-timing-function: ease;
+}
+
+.plat3 {
+  -webkit-animation-name: apparition6;
+  -webkit-animation-timing-function: ease;
+  -o-animation-duration: 1s;
+  -moz-animation-name: apparition;
+  -moz-animation-duration: 1s;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  animation-timing-function: ease;
+}
+
+.dessert1 {
+  -webkit-animation-name: apparition7;
+  -webkit-animation-timing-function: ease;
+  -o-animation-duration: 1s;
+  -moz-animation-name: apparition;
+  -moz-animation-duration: 1s;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  animation-timing-function: ease;
+}
+
+.dessert2 {
+  -webkit-animation-name: apparition8;
+  -webkit-animation-timing-function: ease;
+  -o-animation-duration: 1s;
+  -moz-animation-name: apparition;
+  -moz-animation-duration: 1s;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  animation-timing-function: ease;
+}
+
+.dessert3 {
+  -webkit-animation-name: apparition9;
+  -webkit-animation-timing-function: ease;
+  -o-animation-duration: 1s;
+  -moz-animation-name: apparition;
+  -moz-animation-duration: 1s;
+  -webkit-animation-name: apparition;
+          animation-name: apparition;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  animation-timing-function: ease;
+}
+
+.cta {
+  color: #FFFFFF;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 186px;
+  height: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-left: 82px;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0);
+}
+
+.footer {
+  height: 214px;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+}
+.footer .details {
+  display: flex;
+}
+.footer .details h4 {
+  padding-left: 25px;
+  padding-top: 22px;
+}
+.footer ul > li {
+  padding-bottom: 7px;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+}
+.footer ul li .fa-solid {
+  padding-right: 11px;
+  color: #FFFFFF;
+}
+.footer ul li .espace {
+  margin-right: 9px;
+  padding-left: 1px;
+}
+
+.details {
+  display: flex;
+  padding-bottom: 18px;
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+.details h4 {
+  color: #FFFFFF;
+}
+
+li {
+  color: #FFFFFF;
+}
+
+.container_footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.politique {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    width: 768px;
+    height: 436px;
+  }
+  .titre img {
+    left: 277px;
+  }
+  .Menu {
+    width: 555px;
+    margin-left: 100px;
+    height: 1173px;
+    margin-top: -56px;
+  }
+  .Menu h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta {
+    margin-left: 173px;
+  }
+  .coeur {
+    position: relative;
+    left: 443px;
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .details {
+    display: flex;
+    justify-content: center;
+  }
+  .footer .details h4 {
+    padding-left: 0px;
+    padding-bottom: 22px;
+  }
+  .footer ul li .fa-solid {
+    padding-right: 3px;
+  }
+  .container_footer {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    padding-top: 0px;
+    padding-left: 48px;
+  }
+  .container_footer .services {
+    display: flex;
+    flex-direction: row;
+    width: 482px;
+    margin-right: 24px;
+  }
+  .container_footer .services ul > li {
+    margin-right: 62px;
+  }
+  .container_footer ul {
+    width: 500px;
+    display: flex;
+    padding-right: 7px;
+  }
+  .container_footer .politique ul > li {
+    margin-right: 7px;
+  }
+  .politique {
+    display: flex;
+    flex-direction: row;
+    width: 482px;
+    margin-right: 24px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  header {
+    width: 1440px;
+    height: 736px;
+  }
+  .titre img {
+    left: 615px;
+  }
+  .Menu {
+    width: 1055px;
+    margin-left: 209px;
+    height: 1221px;
+    margin-top: -56px;
+  }
+  .Menu h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .Menu .container h5 {
+    margin-right: 581px;
+  }
+  .cards-txt {
+    width: 634px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .coeur {
+    position: relative;
+    left: 675px;
+    top: -76px;
+  }
+  .cta {
+    margin-left: 423px;
+  }
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer .details {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer .details h4 {
+    padding-top: 90px;
+    padding-right: 76px;
+  }
+  .footer ul li .fa-solid {
+    padding-right: 3px;
+  }
+  .container_footer {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+    align-items: center;
+    justify-content: left;
+    padding-top: 0px;
+    padding-left: 176px;
+    margin-right: 78px;
+  }
+  .container_footer .services {
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    margin-right: 57px;
+  }
+  .container_footer .services ul > li {
+    margin-right: 9px;
+    width: 200px;
+  }
+  .container_footer ul {
+    width: 434px;
+    display: flex;
+  }
+  .container_footer .politique ul > li {
+    margin-right: 15px;
+  }
+  .politique {
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    margin-right: 57px;
+  }
+}/*# sourceMappingURL=lapalettedugout.css.map */

@@ -1,4 +1,17 @@
 @charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: #FFFFFF;
+  height: 2121px;
+}
+
 /* Début de mon Loader */
 @-webkit-keyframes disappear {
   0% {
@@ -33,25 +46,6 @@
     -webkit-transform: rotate(360deg);
   }
 }
-* {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-:root {
-  --color-primary: #9356DC;
-  --color-secondaru: #FF79DA;
-  --color-tertiary: #99E2D0;
-}
-
-body {
-  background: #FFFFFF;
-  height: 2121px;
-}
-
 .chargement {
   z-index: 1000;
   position: absolute;
@@ -62,17 +56,18 @@ body {
   height: 2401px;
   line-height: 500px;
   background: linear-gradient(rgba(146, 86, 220, 0.8862745098), #ff79d9);
-  -webkit-animation: disappear 4s 2s forwards;
-          animation: disappear 4s 2s forwards;
+  -webkit-animation: disappear 3s 1s forwards;
+          animation: disappear 3s 1s forwards;
   transform-origin: top;
+  width: 100%;
 }
 
 .loader-1 {
   position: absolute;
-  font-size: 30px;
+  font-size: 2rem;
   color: #FFFFFF;
-  left: 89px;
-  top: 276px;
+  left: 23%;
+  top: 10%;
 }
 
 .loader {
@@ -86,7 +81,6 @@ body {
 .loader-quart {
   border-radius: 50px;
   border: 6px solid rgba(255, 255, 255, 0.4);
-  /* Fin de mon Loader*/
 }
 .loader-quart:after {
   content: "";
@@ -102,6 +96,7 @@ body {
           animation: spin 1s linear 0s infinite;
 }
 
+/* Fin de mon Loader*/
 .titre {
   width: 100%;
   height: 63px;
@@ -111,7 +106,7 @@ body {
 .titre img {
   position: absolute;
   left: 94px;
-  top: 18px;
+  top: 15px;
   height: 36px;
   width: 197px;
 }
@@ -130,7 +125,6 @@ body {
   width: 174px;
   height: 32px;
   border: none;
-  background-color: transparent;
   font-family: "Roboto Slab", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -138,12 +132,13 @@ body {
   padding-left: 17px;
   padding-top: 15.5px;
   letter-spacing: 1px;
-  color: #353535;
+  color: #101010;
+  background: transparent;
 }
 
 .icon {
   padding-top: 14.5px;
-  color: #353535;
+  color: #101010;
 }
 
 form {
@@ -155,28 +150,37 @@ form {
   height: 292px;
   margin-top: 0px;
   background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 .introduction h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
   font-family: "roboto flex", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 24px;
   width: 100%;
   height: 68px;
-  padding-left: 37px;
   padding-top: 39.5px;
-  text-align: center;
 }
 .introduction p {
-  padding-top: 41.5px;
-  padding-left: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
+  padding-top: 41.5px;
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 18px;
-  color: #353535;
+  color: #101010;
 }
 
 .cta {
@@ -192,9 +196,30 @@ form {
   height: 50px;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 25px;
-  margin-top: 27px;
-  margin-left: 85px;
-  box-shadow: 0px 4px 10px rgb(0, 0, 0);
+  margin-top: 40px;
+  margin-bottom: 57px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  box-shadow: 0px 2px 8px rgb(0, 0, 0);
+}
+.cta:hover {
+  color: #FFFFFF;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 218px;
+  height: 50px;
+  background: linear-gradient(rgba(255, 121, 217, 0.835) 0%, rgba(146, 86, 220, 0.863) 100%);
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-bottom: 57px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  box-shadow: 3px 4px 10px rgb(0, 0, 0);
 }
 
 .solutions {
@@ -216,14 +241,15 @@ form {
 .container {
   display: flex;
   flex-direction: column;
-  padding-left: 29.5px;
+  justify-content: center;
+  align-items: center;
 }
 .container .btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 322px;
+  width: 335px;
   height: 72.5px;
   margin-bottom: 25px;
   background: #F7F7F7;
@@ -240,7 +266,7 @@ form {
   font-size: 14px;
   font-style: normal;
   color: #FFFFFF;
-  background-color: var(--color-primary);
+  background-color: #9356DC;
   height: 24px;
   width: 24px;
   border-radius: 100px;
@@ -248,7 +274,7 @@ form {
   left: 20px;
 }
 .container li > .color {
-  color: var(--color-primary);
+  color: #FFFFFF;
 }
 
 .btn2 {
@@ -256,7 +282,7 @@ form {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 322px;
+  width: 335px;
   height: 72.5px;
   margin-bottom: 25px;
   background: #F7F7F7;
@@ -273,7 +299,7 @@ form {
   font-size: 14px;
   font-style: normal;
   color: #FFFFFF;
-  background-color: var(--color-primary);
+  background-color: #9356DC;
   height: 24px;
   width: 24px;
   border-radius: 100px;
@@ -286,7 +312,7 @@ form {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 322px;
+  width: 335px;
   height: 72.5px;
   margin-bottom: 25px;
   background: #F7F7F7;
@@ -303,7 +329,7 @@ form {
   font-size: 14px;
   font-style: normal;
   color: #FFFFFF;
-  background-color: var(--color-primary);
+  background-color: #9356DC;
   height: 24px;
   width: 24px;
   border-radius: 100px;
@@ -323,7 +349,7 @@ form {
 }
 
 .fa-store {
-  color: var(--color-primary);
+  color: #9356DC;
   padding-right: 27px;
 }
 
@@ -435,10 +461,10 @@ a {
 .badge {
   position: absolute;
   left: 264px;
-  top: 1028px;
+  top: 1008px;
   width: 80px;
   height: 29px;
-  background: var(--color-tertiary);
+  background: #99E2D0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
   color: #008766;
@@ -460,10 +486,10 @@ a {
 .badge2 {
   position: absolute;
   left: 264px;
-  top: 1331px;
+  top: 1315px;
   width: 80px;
   height: 28px;
-  background: var(--color-tertiary);
+  background: #99E2D0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
   color: #008766;
@@ -497,13 +523,14 @@ a {
 }
 .footer ul > li {
   padding-bottom: 7px;
-  font-family: "roboto", sans-serif;
+  font-family: "roboto";
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
 }
 .footer ul li .fa-solid {
   padding-right: 11px;
+  color: #FFFFFF;
 }
 .footer ul li .espace {
   margin-right: 9px;
@@ -513,7 +540,7 @@ a {
 .details {
   display: flex;
   padding-bottom: 18px;
-  font-family: "Shrikhand";
+  font-family: "Roboto Slab", sans-serif;
   font-size: 18px;
   font-style: italic;
   font-weight: 400;
@@ -542,7 +569,12 @@ li {
   flex-direction: column;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+.politique ul li > a {
+  color: #FFFFFF;
+}
+
+/*responsiv tablette*/
+@media screen and (min-width: 376px) and (max-width: 768px) {
   body {
     height: 1709px;
   }
@@ -550,14 +582,14 @@ li {
     left: 288px;
   }
   .cta {
-    margin-left: 268px;
+    margin-left: 0px;
   }
   .solutions {
     height: 430px;
     padding-top: 91px;
   }
   .solutions h2 {
-    padding-left: 105px;
+    padding-left: 93px;
     margin-top: 30px;
   }
   .chargement {
@@ -655,27 +687,27 @@ li {
     justify-content: center;
   }
   .badge {
-    left: 275px;
-    top: 993px;
+    left: 285px;
+    top: 992px;
   }
   .badge2 {
-    left: 632px;
-    top: 993px;
+    left: 641px;
+    top: 997px;
   }
   .footer {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .footer .details {
+  .details {
     display: flex;
     justify-content: center;
   }
-  .footer .details h4 {
+  h4 {
     padding-left: 0px;
     padding-bottom: 22px;
   }
-  .footer ul li .fa-solid {
+  ul li .fa-solid {
     padding-right: 3px;
   }
   .container_footer {
@@ -691,163 +723,127 @@ li {
     width: 482px;
     margin-right: 24px;
   }
-  .container_footer .services ul > li {
-    margin-right: 62px;
-  }
-  .container_footer ul {
+  .container_footer .services ul {
     width: 500px;
     display: flex;
     padding-right: 7px;
   }
-  .container_footer .politique ul > li {
-    margin-right: 7px;
+  .container_footer .services ul > li {
+    margin-right: 62px;
   }
-  .politique {
+  .container_footer .politique {
     display: flex;
     flex-direction: row;
     width: 482px;
     margin-right: 24px;
   }
-}
-@media screen and (min-width: 769px) and (max-width: 1440px) {
-  body {
-    height: 1395px;
+  .container_footer ul > li {
+    margin-right: 7px;
   }
-  .chargement {
-    height: 1642px;
+  .container_footer ul li > a {
+    color: #FFFFFF;
+  }
+}
+/*responsiv desktop*/
+@media screen and (min-width: 770px) and (max-width: 1440px) {
+  body {
+    height: 1562px;
   }
   .loader-1 {
-    left: 634px;
-    top: 119px;
+    left: 45%;
   }
-  #ville {
-    width: 174px;
+  .loader {
+    width: 100px;
+    height: 100px;
   }
   .titre {
     height: 96px;
   }
   .titre img {
     left: 619px;
-    top: 30px;
-  }
-  .bar_search {
-    padding-left: 0px;
-  }
-  .introduction h1 {
-    padding-left: 3px;
-  }
-  .introduction p {
-    padding-left: 12px;
-  }
-  .cta {
-    margin-left: 611px;
-    margin-top: 62px;
+    top: 28px;
   }
   .solutions {
     height: 228px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
   }
   .solutions h2 {
-    padding-left: 187px;
+    margin-right: 854px;
   }
-  .container {
+  .solutions .container {
+    width: 1053px;
     flex-direction: row;
-    justify-content: center;
+    margin-left: 61px;
   }
-  .container .btn {
-    margin-right: 36px;
+  .solutions .btn, .solutions .btn2, .solutions .btn3 {
+    margin-right: 36.5px;
   }
-  .container .btn > p {
-    position: relative;
-    left: -41px;
+  .solutions .btn > p {
+    left: 210px;
   }
-  .container .btn2 > p {
-    position: relative;
-    left: -57px;
+  .solutions .btn2 > p {
+    left: 562px;
   }
-  .container .btn3 > p {
-    position: relative;
-    left: -56px;
-  }
-  .btn2 {
-    margin-right: 36px;
-  }
-  .btn3 {
-    margin-right: 36px;
+  .solutions .btn3 > p {
+    left: 913px;
   }
   .restaurants {
-    height: 769px;
+    height: 820px;
+    justify-content: center;
+    align-items: center;
   }
   .restaurants .cards {
     width: 490px;
-    height: 251px;
-    margin-right: 95px;
-    margin-bottom: 95px;
+    height: 272px;
+    margin-right: 67px;
+    margin-bottom: 100px;
+  }
+  .restaurants .oneposition, .restaurants .threeposition {
+    left: 438px;
+    bottom: -19px;
+  }
+  .restaurants .twoposition, .restaurants .fourposition {
+    left: -753px;
+    bottom: -19px;
+  }
+  .restaurants img {
+    width: 490px;
+  }
+  .restaurants .badge {
+    left: 573px;
+    top: 792px;
+  }
+  .restaurants .badge2 {
+    left: 1117px;
+    top: 782px;
   }
   .restaurants h2 {
-    position: relative;
-    bottom: 20px;
-    left: 164px;
+    margin-right: 900px;
+    padding-left: 0px;
   }
   .les_etablissements {
+    width: 1188px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 1269px;
-    margin-left: 122px;
+    align-items: center;
     justify-content: center;
-    padding-top: 30px;
-  }
-  .card_txt {
-    padding: 0px 40px 65px 13px;
-  }
-  .card_txt h3 {
-    width: 384px;
-  }
-  .cards img {
-    width: 490px;
-    height: 231px;
-  }
-  .oneposition {
-    position: relative;
-    left: 432px;
-    top: 210px;
-  }
-  .twoposition {
-    position: relative;
-    left: -744px;
-    top: 210px;
-  }
-  .threeposition {
-    position: relative;
-    left: 439px;
-    top: 210px;
-  }
-  .fourposition {
-    position: relative;
-    left: -753px;
-    top: 211px;
-  }
-  .badge {
-    left: 509px;
-    top: 827px;
-  }
-  .badge2 {
-    left: 1108px;
-    top: 827px;
+    margin-left: 80px;
   }
   .footer {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    padding-right: 0px;
   }
   .footer .details {
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 25px;
   }
   .footer .details h4 {
     padding-top: 90px;
-    padding-right: 51px;
+    padding-right: 76px;
   }
   .footer ul li .fa-solid {
     padding-right: 3px;

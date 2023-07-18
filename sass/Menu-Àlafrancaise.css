@@ -6,11 +6,6 @@
   text-decoration: none;
 }
 
-body {
-  background: #FFFFFF;
-  height: auto;
-}
-
 .titre {
   width: 100%;
   height: 63px;
@@ -35,12 +30,12 @@ body {
 }
 
 header {
-  background-image: url(Images-et-textes-Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(../Assets/Images-et-textes-Ohmyfood/images/restaurantsphotos/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -35px;
+  background-position-y: 53px;
   z-index: 400;
-  height: 335px;
+  height: 319px;
   width: 375px;
 }
 
@@ -76,8 +71,9 @@ header {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   padding-bottom: 40px;
-  margin-top: -56px;
-  width: 375px;
+  margin-top: -36px;
+  width: 100%;
+  height: 1140px;
 }
 .Menu h2 {
   font-family: "Shrikhand";
@@ -110,29 +106,20 @@ header {
   background-color: #FFFFFF;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .cards-txt .description {
   display: flex;
   flex-direction: column;
-  width: 287px;
+  width: 297px;
   margin-bottom: 13px;
   margin-top: 13px;
   margin-left: 15px;
-  margin-right: 48px;
+  margin-right: 0px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.cards-txt .description .card-title {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.cards-txt .card-title h3 {
+.cards-txt h3 {
   font-family: "roboto";
   font-size: 18px;
   font-weight: 500;
@@ -141,56 +128,48 @@ header {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.cards-txt .card-subtile {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.cards-txt .card-subtile p {
+.cards-txt p {
   font-family: "roboto";
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
-  display: flex;
-  flex-direction: row;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.cards-txt .tarif {
+.cards-txt .card-subtil {
   display: flex;
-  justify-content: flex-end;
   color: #353535;
   font-family: "roboto";
   font-size: 15px;
   font-weight: 700;
   height: 69px;
-  padding-bottom: 12px;
-  align-items: baseline;
+  align-items: center;
 }
-.cards-txt .check {
+.cards-txt .card-subtil h4 {
+  padding-top: 25px;
+}
+.cards-txt .card-subtil .check {
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 11px;
-  margin-right: -7rem;
+  margin-right: -4rem;
   width: 59px;
   height: 69px;
   border-radius: 0px 15px 15px 0px;
   transition: margin-right 0.5s;
 }
-.cards-txt .check .fa-circle-check {
+.cards-txt .card-subtil .check .fa-circle-check {
   color: #99E2D0;
   background-color: #FFFFFF;
   border-radius: 15px;
 }
-.cards-txt:hover .check {
+.cards-txt .card-subtil:hover .check {
   margin-right: 0;
 }
-.cards-txt .fa-circle-check {
+.cards-txt .card-subtil .fa-circle-check {
   -webkit-animation: quart-spin 0.5s ease-in-out;
           animation: quart-spin 0.5s ease-in-out;
 }
@@ -666,7 +645,7 @@ li {
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 476px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   header {
     width: 768px;
     height: 436px;
@@ -722,6 +701,9 @@ li {
     padding-left: 0px;
     padding-bottom: 22px;
   }
+  .footer .details .cta {
+    padding-left: 0px;
+  }
   .footer ul li .fa-solid {
     padding-right: 3px;
   }
@@ -730,7 +712,9 @@ li {
     flex-direction: row;
     width: 768px;
     padding-top: 0px;
-    padding-left: 48px;
+    padding-left: 318px;
+    align-items: center;
+    justify-content: center;
   }
   .container_footer .services {
     display: flex;
@@ -739,7 +723,7 @@ li {
     margin-right: 24px;
   }
   .container_footer .services ul > li {
-    margin-right: 62px;
+    margin-right: 46px;
   }
   .container_footer ul {
     width: 500px;
@@ -771,7 +755,7 @@ li {
   .Menu {
     width: 1055px;
     margin-left: 209px;
-    height: 1301px;
+    height: 1235px;
   }
   .Menu h2 {
     display: flex;
@@ -779,27 +763,32 @@ li {
     justify-content: center;
     align-items: center;
   }
-  .Menu .container h5 {
+  .Menu .coeur {
+    position: relative;
+    left: 686px;
+    top: -76px;
+  }
+  .Menu .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Menu h5 {
     margin-right: 581px;
   }
   .cards-txt {
     width: 634px;
   }
-  .tarif {
-    padding-left: 231px;
+  .cards-txt .card-subtil {
+    padding-left: 285px;
   }
-  .coeur {
-    position: relative;
-    left: 675px;
-    top: -76px;
+  .cards-txt .check {
+    margin-left: 27px;
   }
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .cta {
+  .cards-txt .cta {
     margin-right: 109px;
+    margin-top: 31px;
   }
   .footer {
     width: 100%;
@@ -850,4 +839,4 @@ li {
     width: 380px;
     margin-right: 57px;
   }
-}/*# sourceMappingURL=lanoteenchantee.css.map */
+}/*# sourceMappingURL=Menu-Àlafrancaise.css.map */

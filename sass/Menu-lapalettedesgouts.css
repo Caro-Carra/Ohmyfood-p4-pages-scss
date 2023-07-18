@@ -6,6 +6,8 @@
   text-decoration: none;
 }
 
+/*mixin CTA*/
+/*animation menu*/
 .entree1 {
   -webkit-animation-name: apparition;
           animation-name: apparition;
@@ -321,11 +323,7 @@
   }
 }
 
-body {
-  background: #FFFFFF;
-  height: 1460px;
-}
-
+/*fin animation menu*/
 .titre {
   width: 100%;
   height: 63px;
@@ -350,12 +348,40 @@ body {
 }
 
 header {
-  background-image: url(Images-et-textes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(Assets/Images-et-textes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 400;
-  height: 275px;
+  height: 282px;
   width: 375px;
+  background-position-y: 18px;
+  background-position-x: -30px;
+}
+
+.fa-regular {
+  font-size: 1.5em;
+}
+
+.coeur {
+  position: relative;
+  left: 292px;
+  top: -75px;
+}
+.coeur > i {
+  position: absolute;
+}
+
+.coeur_plein {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 2s;
+}
+.coeur_plein:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .Menu {
@@ -363,9 +389,10 @@ header {
   background-color: #F7F7F7;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  height: 1173px;
+  padding-bottom: 40px;
+  margin-top: -36px;
   width: 100%;
-  margin-top: -56px;
+  height: 1141px;
 }
 .Menu h2 {
   font-family: "Shrikhand";
@@ -375,6 +402,9 @@ header {
   color: #101010;
   padding-top: 32px;
   padding-bottom: 42px;
+}
+.Menu .container {
+  padding-right: 13px;
 }
 .Menu .container h5 {
   font-family: "Roboto";
@@ -386,59 +416,33 @@ header {
   border-bottom: 3px solid #99E2D0;
   width: 40px;
 }
-.Menu .fa-regular {
-  font-size: 1.5em;
-}
-.Menu .coeur {
-  position: relative;
-  left: 293px;
-  top: -76px;
-}
-.Menu .coeur > i {
-  position: absolute;
-}
-.Menu .coeur_plein {
-  opacity: 0;
-  transition-property: all;
-  transition-duration: 2s;
-}
-.Menu .coeur_plein:hover {
-  cursor: pointer;
-  opacity: 1;
-  color: transparent;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
 
 .cards-txt {
   display: flex;
   width: 349px;
-  height: 69px;
-  padding-left: 10px;
   border-radius: 15px;
   margin-bottom: 12px;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
-.cards-txt .card-title {
+.cards-txt .description {
   display: flex;
   flex-direction: column;
-  width: 287px;
-  height: 72px;
+  width: 297px;
+  margin-bottom: 13px;
+  margin-top: 13px;
+  margin-left: 15px;
+  margin-right: 0px;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.cards-txt .card-title h3 {
+.cards-txt h3 {
   font-family: "roboto";
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
-  padding-top: 12px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -448,57 +452,45 @@ header {
   font-size: 15px;
   font-weight: 300;
   font-style: normal;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
-.cards-txt .tarif {
+.cards-txt .card-subtil {
   display: flex;
-  justify-content: flex-end;
   color: #353535;
   font-family: "roboto";
   font-size: 15px;
   font-weight: 700;
   height: 69px;
-  padding-bottom: 12px;
-  align-items: baseline;
+  align-items: center;
 }
-.cards-txt .check {
+.cards-txt .card-subtil h4 {
+  padding-top: 25px;
+}
+.cards-txt .card-subtil .check {
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 11px;
-  margin-right: -7rem;
+  margin-right: -4rem;
   width: 59px;
   height: 69px;
   border-radius: 0px 15px 15px 0px;
   transition: margin-right 0.5s;
 }
-.cards-txt .check .fa-circle-check {
+.cards-txt .card-subtil .check .fa-circle-check {
   color: #99E2D0;
   background-color: #FFFFFF;
   border-radius: 15px;
 }
-.cards-txt:hover .check {
+.cards-txt .card-subtil:hover .check {
   margin-right: 0;
 }
-.cards-txt .fa-circle-check {
+.cards-txt .card-subtil .fa-circle-check {
   -webkit-animation: quart-spin 0.5s ease-in-out;
           animation: quart-spin 0.5s ease-in-out;
-}
-
-.container {
-  margin-bottom: 40px;
-  padding-right: 13px;
-}
-.container .cards-txt .card-subtile span {
-  color: #353535;
-  font-size: 15px;
-  font-weight: 700;
-  font-style: normal;
 }
 
 .cta {
@@ -601,7 +593,7 @@ li {
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
   body {
     height: auto;
   }
@@ -663,9 +655,11 @@ li {
   .container_footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 768px;
     padding-top: 0px;
-    padding-left: 48px;
+    padding-left: 302px;
   }
   .container_footer .services {
     display: flex;
@@ -674,7 +668,7 @@ li {
     margin-right: 24px;
   }
   .container_footer .services ul > li {
-    margin-right: 62px;
+    margin-right: 53px;
   }
   .container_footer ul {
     width: 500px;
@@ -693,23 +687,24 @@ li {
 }
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   header {
-    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -34px;
     height: 736px;
+    width: 1440px;
   }
   .titre {
     height: 96px;
   }
   .titre img {
-    -o-object-fit: cover;
-       object-fit: cover;
     left: 646px;
     top: 36px;
   }
   .Menu {
     width: 1055px;
     margin-left: 209px;
-    height: 1221px;
-    margin-top: -56px;
+    height: 1122px;
+    margin-top: -36px;
   }
   .Menu .coeur {
     position: relative;
@@ -728,8 +723,8 @@ li {
   .cards-txt {
     width: 634px;
   }
-  .cards-txt .tarif {
-    margin-left: 284px;
+  .cards-txt .card-subtil {
+    margin-left: 285px;
   }
   .cards-txt .check {
     margin-left: 11px;
@@ -741,6 +736,7 @@ li {
   }
   .cta {
     margin-right: 109px;
+    margin-top: 31px;
   }
   .footer {
     width: 100%;
@@ -791,4 +787,4 @@ li {
     width: 380px;
     margin-right: 57px;
   }
-}/*# sourceMappingURL=lapalettedugout.css.map */
+}/*# sourceMappingURL=Menu-lapalettedesgouts.css.map */

@@ -155,15 +155,18 @@ body {
 
 /* Fin de mon Loader*/
 
+
+
 .titre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 63px;
 	background-color: $background-color_1;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 	img {
-		position: absolute;
-		left: 94px;
-		top: 15px;
+		
     height: 36px;
     width: 197px;
 	}
@@ -177,6 +180,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
 }
 
 #ville {
@@ -188,18 +192,17 @@ body {
 	font-style: normal;
 	font-size: 16px;
 	padding-left: 17px;
-	padding-top: 15.5px;
 	letter-spacing: 1px;
 	color: $color_2;
 	background: $background-color_9;
 }
 
 .icon {
-	padding-top: 14.5px;
 	color: $color_2;
 }
 
 form {
+	align-items: center;
 	display: flex;
 	
 }
@@ -219,7 +222,7 @@ form {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-	text-align: center;
+		text-align: center;
 		font-family: $font-family_2;
 		font-weight: 700;
 		font-style: normal;
@@ -258,9 +261,12 @@ form {
 	height: 440px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	padding-top: 48px;
 	h2 {
-		padding-left: 20px;
+		display: flex;
+		justify-content: stretch;
+		padding-left: 32px;
 		font-family: $font-family_2;
 		font-size: 24px;
 		font-style: normal;
@@ -274,117 +280,69 @@ form {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	
-	.btn {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		width: 335px;
-		height: 72.5px;
-		margin-bottom: 25px;
-		background: #F7F7F7;
-		border-radius: 20px;
-		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-		>p {
+	width: 100%;
+	padding-left: 20px;
+
+		.btn , .btn2 , .btn3 {
 			display: flex;
-			flex-direction: row;
-			justify-content: center;
 			align-items: center;
-			font-family: $font-family_5;
-			font-weight: 500;
-			font-size: 14px;
-			font-style: normal;
-			color: $color_4;
-			background-color: $background-color_5;
-			height: 24px;
-			width: 24px;
-			border-radius: 100px;
-			position: absolute;
-			left: 20px;
-		}
+			width: 335px;
+			height: 72.5px;
+			margin-bottom: 25px;
+			background: #F7F7F7;
+			border-radius: 20px;
+			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 	}
-	li {
-		>.color {
-			color: $color_4;
-		}
-	}
-}
-
-.btn2 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 335px;
-	height: 72.5px;
-	margin-bottom: 25px;
-	background: #F7F7F7;
-	border-radius: 20px;
-	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-	>p {
+	
+	.box{
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
 		align-items: center;
+		justify-content: center;
+		margin-left: -1rem;
+		color: $color_4;
 		font-family: $font-family_5;
 		font-weight: 500;
 		font-size: 14px;
 		font-style: normal;
-		color: $color_4;
-		background-color: $background-color_5;
-		height: 24px;
-		width: 24px;
-		border-radius: 100px;
-		position: absolute;
-		left: 20px;
+		margin-right: 336px;
+			>p {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				background-color: $background-color_5;
+				border-radius: 100px;
+				width: 24px;
+				height: 24px;
+				margin-right: 22px;
+			}
+
+			a{
+				margin-left: 27px;
+				width: 377px;
+			}
 	}
 }
 
-.btn3 {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 335px;
-	height: 72.5px;
-	margin-bottom: 25px;
-	background: #F7F7F7;
-	border-radius: 20px;
-	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-	>p {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		font-family: $font-family_5;
-		font-weight: 500;
-		font-size: 14px;
-		font-style: normal;
-		color: $color_4;
-		background-color: $background-color_5;
-		height: 24px;
-		width: 24px;
-		border-radius: 100px;
-		position: absolute;
-		left: 20px;
-	}
-}
 
 .fa-mobile-screen-button {
-	padding-right: 35px;
-	padding-left: 20px;
+	font-size: large;
+	padding-left: 10px;
 	color: $color_8;
+	
 }
 
 .fa-list-ul {
-	padding-right: 30px;
+	font-size: large;
+	padding-left: 10px;
 	color: $color_8;
 }
 
 .fa-store {
+	font-size: large;
 	color: $color-primary;
-	padding-right: 27px;
+	padding-left: 10px;
 }
 
 a {
@@ -400,9 +358,10 @@ a {
 	flex-direction: column;
 	padding-left: 14px;
 	background-color: $background-color_4;
-	height: 1334px;
+	height: 1291px;
+
 	h2 {
-		padding-top: 48px;
+		padding-top: 54px;
 		padding-bottom: 35px;
 		font-family: $font-family_2;
 		font-size: 24px;
@@ -410,39 +369,43 @@ a {
 		font-style: normal;
 		padding-left: 4px;
 	}
+	.les_etablissements {
+		margin-bottom: 20px;
+	}
+
+	
 	.cards {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 340px;
-		height: 283px;
+		width: 346px;
+		height: 251px;
 		background-color: $background-color_1;
 		border-radius: 15px;
+		margin-left: Opx;
+		margin-bottom: 18px;
+		overflow: hidden;
 	}
-}
-.les_etablissements {
-	margin-bottom: 20px;
-}
-.cards {
-	margin-left: 4px;
-	margin-bottom: 20px;
 	img {
-		width: 340px;
-		height: 186px;
-		object-fit: cover;
+		width: 346px;
+		height: 231px;
 		border-radius: 15px 15px 0px 0px;
+		margin-top: -57px;
+		object-fit: cover;
 	}
 }
+
+
 
 .card_content {
 	padding-top: 10px;
 	display: flex;
+	flex-direction: column;
 }
 
 .card_txt {
-	padding: 13px;
+	padding: 0px 13px 12px 13px;
 	p {
-		padding-top: 5px;
 		font-family: $font-family_6;
 		font-size: 17px;
 		font-style: normal;
@@ -458,15 +421,17 @@ a {
 }
 
 .card_rating {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: right;
+	align-items: flex-end;
 	position: relative;
-	left: 290px;
-	bottom: 87px;
-	>i {
-		position: absolute;
-	}
-}
+	bottom: 73px;
+	left: -31px;
+
 
 .coeur_plein {
+	position: absolute;
 	opacity: 0;
 	transition-property: all;
 	transition-duration: 2s;
@@ -477,6 +442,7 @@ a {
 		background-clip: text;
 		-webkit-background-clip: text;
 	}
+}
 }
 
 .fa-regular {
@@ -491,8 +457,8 @@ a {
 
 .badge {
 	position: absolute;
-	left: 264px;
-	top: 1008px;
+	left: 265px;
+	top: 980px;
 	width: 80px;
 	height: 29px;
 	background: $background-color_8;
@@ -516,8 +482,8 @@ a {
 
 .badge2 {
 	position: absolute;
-	left: 264px;
-	top: 1315px;
+	left: 265px;
+	top: 1274px;
 	width: 80px;
 	height: 28px;
 	background: $background-color_8;
@@ -608,26 +574,11 @@ li {
 
  /*responsiv tablette*/
 
-@media screen and (min-width: 376px) and (max-width:768px) {
+@media screen and (min-width: 576px) and (max-width:768px) {
 	body {
-		height: 1709px;
+		height: 1709px;                                                                                                  
 	}
-	.titre {
-		img {
-			left: 288px;
-		}
-	}
-	.cta {
-		margin-left: 0px;
-	}
-	.solutions {
-		height: 430px;
-		padding-top: 91px;
-		h2 {
-			padding-left: 93px;
-			margin-top: 30px;
-		}
-	}
+	                       
 	.chargement {
 		width: 768px;
 		height: 1790px;
@@ -635,138 +586,97 @@ li {
 	.loader-1 {
 		left: 285px;
 	}
+
+	.titre{
+		
+		height: 96px;
+	}
+	.solutions{
+		padding-left: 10px;
+		height: 331px;
+		align-items: center;
+		margin-left: 12px;
+	
+	h2{
+		padding-left: 0px;
+	}
 	.container {
-		max-width: 768px;
 		align-items: center;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin-left: 47px;
-		width: 696px;
-		margin-left: 53px;
-		.btn {
-			margin-right: 40px;
-			margin-bottom: 45px;
-			width: 278px;
-			p {
-				position: relative;
-				left: -18px;
-			}
-		}
-		.btn2 {
-			p {
-				position: relative;
-				left: -32px;
-			}
-		}
+		padding-left: 18px;
+	}
+	.btn , .btn2 , .btn3 {
+		margin-right: 35px;
 
-		.btn3 {
-			p {
-				position: relative;
-				left: -30px;
-			}
-		}
 	}
+}
 
-	#ville {
-		width: 171px;
-	}
-	.btn2 {
-		margin-right: 40px;
-		margin-bottom: 45px;
-		width: 278px;
-	}
-	.btn3 {
-		margin-right: 40px;
-		margin-bottom: 45px;
-		width: 278px;
-	}
 	.restaurants {
 		padding-left: 40px;
 		width: 768px;
 		height: 737px;
+		align-items: center;
 		.cards {
 			margin-bottom: 50px;
 			margin-right: 20px;
 			width: 324px;
 			height: 261px;
 		}
+		img{
+			width: 376px;
+			margin-left: -3rem;
+		}
 		h2 {
-			padding-left: 20px;
+			padding-left: 0px;
 		}
-	}
-
-	.cards {
-		img {
-			width: 324px;
-			padding: 5px;
-			border-top-left-radius: 20px;
-			border-top-right-radius: 20px;
+		.les_etablissements {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 743px;
 		}
-	}
-
-	.oneposition {
-		position: relative;
-		left: -74px;
-		top: 220px;
-	}
-	.twoposition {
-		position: relative;
-		left: -74px;
-		top: 220px;
-	}
-
-	.threeposition {
-		position: relative;
-		left: -72px;
-		top: 220px;
-	}
-
-	.fourposition {
-		position: relative;
-		left: -74px;
-		top: 220px;
-	}
-
-	.les_etablissements {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	.badge {
-		left: 285px;
-		top: 992px;
-	}
-	.badge2 {
-		left: 641px;
-		top:997px;
+		.card_rating{
+			left: -4rem;
+		}
+		.badge{
+			left:274px;
+			top: 910px;
+		}
+		.badge2{
+			top: 910px;
+			left: 643px;
+		}
 	}
 
 	.footer {
 		width: 100%;
 		display: flex;
 		justify-content: center;
-	}
 		.details {
 			display: flex;
 			justify-content: center;
-		}
 			h4 {
 				padding-left: 0px;
 				padding-bottom: 22px;
 			}
-		
+			.cta{
+				padding-left: 0px;
+			}
+		}
+
 		ul {
 			li {
 				.fa-solid {
 					padding-right: 3px;
-				
 				}
 			}
 		}
-		.container_footer {
+	}
+	.container_footer {
 		display: flex;
 		flex-direction: row;
 		width: 768px;
@@ -778,31 +688,33 @@ li {
 			width: 482px;
 			margin-right: 24px;
 			ul {
-			width: 500px;
-			display: flex;
-			padding-right: 7px;
 				>li {
 					margin-right: 62px;
 				}
 			}
 		}
-		.politique {
+		ul {
+			width: 500px;
 			display: flex;
-			flex-direction: row;
-			width: 482px;
-			margin-right: 24px;
+			padding-right: 7px;
 		}
-
-			ul 
+		.politique {
+			ul {
 				>li {
 					margin-right: 7px;
-				
 				}
-				ul li >a{
-					color: $color_4;
-				}
+			}
 		}
 	}
+	.politique {
+		display: flex;
+		flex-direction: row;
+		width: 482px;
+		margin-right: 24px;
+	}
+}
+
+	
 		
 	/*responsiv desktop*/
 
@@ -819,13 +731,7 @@ li {
 	}
 	.titre{
 		height: 96px;
-		img{
-			left: 619px;
-			top: 28px;
-		}
 	}
-	
-	
 	.solutions{
 		height: 228px;
 		justify-content: center;
@@ -867,23 +773,24 @@ li {
 						
 						.cards{
 							width: 490px;
-							height: 272px;
+							height: 251px;
 							margin-right: 67px;
 							margin-bottom: 100px;
 						}
 
 							.oneposition , .threeposition{
-								left: 438px;
-								bottom: -19px;
+								left: 464px;
+								bottom: -42px;
 							}
 
 							.twoposition , .fourposition{
-								left:-753px;
-								bottom: -19px;
+								left:-695px;
+								bottom: -42px;
 							}
 
 							img{
 								width: 490px;
+								margin-top: -57px;
 							}
 
 							.badge{
@@ -892,8 +799,8 @@ li {
 
 							}
 							.badge2{
-								left:1117px;
-								top: 782px;
+								left:1156px;
+								top: 792px;
 
 							}
 							
@@ -976,5 +883,167 @@ li {
 				}
 				
 				
+@media screen and (min-width:1700px) and (max-width:2560px) {
+
+	body{
+		height:1562px ;
+	}
+	.loader-1{
+		left: 45%;
+	}
+	.loader{
+		width: 100px;
+		height: 100px;
+	}
+	.titre{
+		height: 96px;
+		img{
+			left: 619px;
+			top: 28px;
+		}
+	}
+	
+	
+	.solutions{
+		height: 228px;
+		justify-content: center;
+		align-items: center;
+		padding-top: 0px;
+			h2{
+				margin-right: 854px;
+			}
+	
+			.container{
+				width: 1053px;
+				flex-direction: row;
+				margin-left: 61px;
+			}
+				.btn , .btn2 , .btn3{
+					margin-right: 36.5px;
+				
+				}
+					
+					
+					}
+
+
+					.restaurants{
+						height: 820px;
+						justify-content: center;
+						align-items: center;
+						
+						.cards{
+							width: 490px;
+							height: 272px;
+							margin-right: 67px;
+							margin-bottom: 100px;
+						}
+
+							.oneposition , .threeposition{
+								left: 438px;
+								bottom: -38px;
+							}
+
+							.twoposition , .fourposition{
+								left:-691px;
+								bottom: -38px;
+							}
+
+							img{
+								width: 490px;
+							}
+
+							.badge{
+								left: 778px;
+								top: 782px;
+
+							}
+							.badge2{
+								left:1360px;
+								top: 782px;
+
+							}
+							
+						
+					
+					h2{
+						margin-right: 900px;
+						padding-left: 0px;
+					}
+				
+				}
+					.les_etablissements{
+						width: 1188px;
+						display: flex;
+						flex-direction: row;
+						flex-wrap: wrap;
+						align-items: center;
+						justify-content: center;
+						margin-left: 80px;
+					}
+					.footer {
+						width: 100%;
+						display: flex;
+						flex-direction: row-reverse;
+						.details {
+							display: flex;
+							flex-direction: row-reverse;
+							h4 {
+								padding-top: 90px;
+								padding-right: 76px;
+							}
+						}
+						ul {
+							li {
+								.fa-solid {
+									padding-right: 3px;
+								}
+							}
+						}
+					}
+					.container_footer {
+						display: flex;
+						flex-direction: row;
+						width: 768px;
+						align-items: center;
+						justify-content: left;
+						padding-top: 0px;
+						padding-left: 176px;
+						margin-right: 78px;
+						.services {
+							display: flex;
+							flex-direction: row;
+							width: 380px;
+							margin-right: 57px;
+							ul {
+								>li {
+									margin-right: 9px;
+									width: 200px;
+								}
+							}
+						}
+						ul {
+							width: 434px;
+							display: flex;
+						}
+						.politique {
+							ul {
+								>li {
+									margin-right: 15px;
+								}
+							}
+						}
+					
+					.politique {
+						display: flex;
+						flex-direction: row;
+						width: 380px;
+						margin-right: 57px;
+					}
+					}
+				}
+			
+				
+
 
 					
